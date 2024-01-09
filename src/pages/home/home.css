@@ -48,9 +48,9 @@
 .hero-section__image-half-round-shape{
     position: absolute;
     left: 60%;
-    bottom: -1%;
+    bottom: 4%;
     width: 280px;
-    height: 490px;
+    height: 450px;
     border-top-right-radius: 350px;
     border-bottom-right-radius: 350px;
     border: 1px solid var(--circle-border);
@@ -77,22 +77,22 @@
 }
 
 .social-links a:nth-child(1){
-    left: 270px;
-    top: 30px;
+    left: 300px;
+    top: 50px;
 }
 
 .social-links a:nth-child(2){
-    left: 385px;
-    top: 120px;
+    left: 400px;
+    top: 150px;
 }
 
 .social-links a:nth-child(3){
-    left: 430px;
-    top: 250px;
+    left: 425px;
+    top: 300px;
 }
 .social-links a:nth-child(4){
-    left: 400px;
-    top: 380px;
+    left: 350px;
+    top: 430px;
 }
 
 .video-link{

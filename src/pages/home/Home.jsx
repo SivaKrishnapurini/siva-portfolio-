@@ -10,7 +10,7 @@ const Home = () =>{
                     Hello, I am <br /> Siva Krishna
                 </div>
                 <div className='hero-section__paragraph'>
-                    <h1>Full Stack Developer specialised in HTML, CSS, JavaScript, Bootstrap, React js, Python, Redux, Mongoose, Express js, Node js, Django. </h1>
+                    <h1>Full Stack Developer specialised in HTML, CSS, JavaScript, Bootstrap, React js, Python, Redux, Mongoose, Express js, Node js, Django, PostgreSql, MySQl. </h1>
                 </div>
                 <a href='' download='sivakrishna_resume.pdf' className='button' >Get Resume</a>
                 <div className="video-link">
