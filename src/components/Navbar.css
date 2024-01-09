@@ -7,13 +7,15 @@
 }
 
 .nav{
-    height: 80px;
+    height: 70px;
     background-color: var(--nav-bg);
     width: 100%;
     position: fixed;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
+    top:0;
+    z-index: 99;
 }
 
 .nav__wrapper {
@@ -142,5 +144,8 @@
     
     .mobile-menu{
         display: flex;
+    }
+    .nav__logo{
+        font-size: 1.3rem;
     }
 }

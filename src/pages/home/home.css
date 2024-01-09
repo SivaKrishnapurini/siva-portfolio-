@@ -1,0 +1,141 @@
+.home{
+    padding-top: 70px;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* position: relative; */
+}
+
+.hero-section__left,
+.hero-section__right{
+    flex: 1;
+}
+
+.hero-section__specila-text{
+    font-size: 76px;
+    line-height: 140%;
+    color: var(--special-text);
+    font-family: var(--secondary-font-family);
+}
+
+.hero-section__paragraph{
+    padding: 20px 0;
+    line-height: 1.4;
+}
+.hero-section__paragraph h1{
+    font-size: 1.3rem;
+}
+
+.hero-section__image{
+    height: auto;
+    top: auto;
+    left: auto;
+    transform: translateX(-30%);
+    z-index: -1;
+    display: flex; 
+    position: absolute;
+}
+
+.hero-section__image img{
+    max-width: 100%;
+    height: 650px;
+    margin-top: -120px;
+}
+
+.hero-section__image-half-round-shape{
+    position: absolute;
+    left: 60%;
+    bottom: -1%;
+    width: 280px;
+    height: 490px;
+    border-top-right-radius: 350px;
+    border-bottom-right-radius: 350px;
+    border: 1px solid var(--circle-border);
+    border-left: 0;
+    z-index: -1;
+}
+
+.social-links{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.social-links a{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid var(--special-text);
+    color: var(--special-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--background-color);
+}
+
+.social-links a:nth-child(1){
+    left: 270px;
+    top: 30px;
+}
+
+.social-links a:nth-child(2){
+    left: 385px;
+    top: 120px;
+}
+
+.social-links a:nth-child(3){
+    left: 430px;
+    top: 250px;
+}
+.social-links a:nth-child(4){
+    left: 400px;
+    top: 380px;
+}
+
+.video-link{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.video-link span{
+    padding-left: 20px;
+}
+
+.link a{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--special-text);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    animation: animate-ripple 3s infinite linear backwards;
+    color: inherit;
+}
+
+@keyframes animate-ripple{
+    50%{
+        box-shadow:0 0 0 20px rgba(255, 255, 255, 0) ;
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.spin{
+    animation: spin 20s linear infinite;
+}
