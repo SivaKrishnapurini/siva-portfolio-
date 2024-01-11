@@ -1,0 +1,22 @@
+.contact-form {
+    width: 100%;
+    display: flex;
+}
+
+form{
+    width: 60%;
+    padding: 20px;
+    background-color: var(--nav-bg);
+}
+
+.from-group{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+input,textarea{
+    padding: 10px;
+    width: 95%;
+    margin: 5px;
+}

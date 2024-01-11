@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 
 import { Pagination, Navigation } from 'swiper/modules';
+import Contact from '../../components/contact/Contact'
 const Home = () =>{
     const skillRef = useRef(null);
 
@@ -271,6 +272,11 @@ const Home = () =>{
                     </Swiper>
                     </div>
                 </section>
+                <div className="contact" id="contact">
+                    <h3 className="section__label">Contact</h3>
+                    <h2 className="section__title">Connect with us</h2>
+                    <Contact />
+                </div>
         </div>
     )
 }
