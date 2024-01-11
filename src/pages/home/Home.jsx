@@ -4,6 +4,13 @@ import spierImage from '../../assets/siva porfolio.png'
 import Data from '../../utils/Data'
 import Card from '../../components/card/Card'
 import { useEffect, useRef } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+
+import { Pagination, Navigation } from 'swiper/modules';
 const Home = () =>{
     const skillRef = useRef(null);
 
@@ -156,6 +163,112 @@ const Home = () =>{
                                 Portfolio 6
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                <section className="testimonals" id="testimonals">
+                    <h3 className="section__label">Testimonials</h3>
+                    <h2 className="section__title">Satisfied</h2>
+                    <div className="testimonials__wrapper">
+                    <Swiper
+                        spaceBetween={50}
+                        speed={500}
+                        slidesPerView={3}
+                        breakpoints={{
+                            568: {
+                              slidesPerView: 1,
+                            },
+                            768: {
+                              slidesPerView: 2,
+                            },
+                            1020: {
+                              slidesPerView: 3,
+                            },
+                        }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        loop={true}
+                        autoplay={{ delay: 2000, disableOnInteraction: false }}
+                        pagination={{
+                            type: 'fraction',
+                          }}
+                          navigation={true}
+                          modules={[Pagination, Navigation]}
+                          className="mySwiper"
+                        >
+                        <SwiperSlide><div className="testimonials__card">
+                            <div className="testimonials__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, laudantium saepe? Enim at fugiat quo unde facilis nesciunt a beatae sint, deleniti placeat eius animi commodi similique maxime quam adipisci?</div>
+                                <div className="testimonails__author">
+                                    <div className="testimonals__author-title">
+                                        CEO Fallon Unlimited
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide><div className="testimonials__card">
+                            <div className="testimonials__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, laudantium saepe? Enim at fugiat quo unde facilis nesciunt a beatae sint, deleniti placeat eius animi commodi similique maxime quam adipisci?</div>
+                                <div className="testimonails__author">
+                                    <div className="testimonals__author-title">
+                                        CEO Fallon Unlimited
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide><div className="testimonials__card">
+                            <div className="testimonials__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, laudantium saepe? Enim at fugiat quo unde facilis nesciunt a beatae sint, deleniti placeat eius animi commodi similique maxime quam adipisci?</div>
+                                <div className="testimonails__author">
+                                    <div className="testimonals__author-title">
+                                        CEO Fallon Unlimited
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide><div className="testimonials__card">
+                            <div className="testimonials__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, laudantium saepe? Enim at fugiat quo unde facilis nesciunt a beatae sint, deleniti placeat eius animi commodi similique maxime quam adipisci?</div>
+                                <div className="testimonails__author">
+                                    <div className="testimonals__author-title">
+                                        CEO Fallon Unlimited
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide><div className="testimonials__card">
+                            <div className="testimonials__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, laudantium saepe? Enim at fugiat quo unde facilis nesciunt a beatae sint, deleniti placeat eius animi commodi similique maxime quam adipisci?</div>
+                                <div className="testimonails__author">
+                                    <div className="testimonals__author-title">
+                                        CEO Fallon Unlimited
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide><div className="testimonials__card">
+                            <div className="testimonials__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, laudantium saepe? Enim at fugiat quo unde facilis nesciunt a beatae sint, deleniti placeat eius animi commodi similique maxime quam adipisci?</div>
+                                <div className="testimonails__author">
+                                    <div className="testimonals__author-title">
+                                        CEO Fallon Unlimited
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide><div className="testimonials__card">
+                            <div className="testimonials__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, laudantium saepe? Enim at fugiat quo unde facilis nesciunt a beatae sint, deleniti placeat eius animi commodi similique maxime quam adipisci?</div>
+                                <div className="testimonails__author">
+                                    <div className="testimonals__author-title">
+                                        CEO Fallon Unlimited
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+
+                        
+                    </Swiper>
                     </div>
                 </section>
         </div>
