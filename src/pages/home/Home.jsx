@@ -57,7 +57,7 @@ const Home = () =>{
                 </div>
                 <div className="hero-section__right">
                     <div className="hero-section__image">
-                        <img src={spierImage} alt="hero image" />
+                        <img src='https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466' alt="hero image" />
                         <div className="hero-section__image-half-round-shape"></div>
                             <div className="social-links">
                                 <a href='' className='spin'>
@@ -116,6 +116,44 @@ const Home = () =>{
                                 <div className="skill__box">
                                     <div ref={skillRef} className="skill__progress-line" data-width='95'></div>
                                     <div className="skill__percentage">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="portfolio" id="portfolio">
+                    <h3 className="section__label">My Portfolio</h3>
+                    <h2 className="section__title">My Complete Projects</h2>
+
+                    <div className="portfolio__grid">
+                        <div className="portfolio__card">
+                            <img src='https://i.pinimg.com/736x/fe/01/d3/fe01d39cdda7f6ce4e2ad45b19047d11.jpg' alt='portfolio 1' />
+                            <div className="portfolio__card-title">
+                                Portfolio 2
+                            </div>
+                        </div>
+                        <div className="portfolio__card">
+                            <img src='https://i.pinimg.com/736x/fe/01/d3/fe01d39cdda7f6ce4e2ad45b19047d11.jpg' alt='portfolio 2' />
+                            <div className="portfolio__card-title">
+                                Portfolio 3
+                            </div>
+                        </div>
+                        <div className="portfolio__card">
+                            <img src='https://i.pinimg.com/736x/fe/01/d3/fe01d39cdda7f6ce4e2ad45b19047d11.jpg' alt='portfolio 3' />
+                            <div className="portfolio__card-title">
+                                Portfolio 4
+                            </div>
+                        </div>
+                        <div className="portfolio__card">
+                            <img src='https://i.pinimg.com/736x/fe/01/d3/fe01d39cdda7f6ce4e2ad45b19047d11.jpg' alt='portfolio 4' />
+                            <div className="portfolio__card-title">
+                                Portfolio 5
+                            </div>
+                        </div>
+                        <div className="portfolio__card">
+                            <img src='https://i.pinimg.com/736x/fe/01/d3/fe01d39cdda7f6ce4e2ad45b19047d11.jpg' alt='portfolio 5' />
+                            <div className="portfolio__card-title">
+                                Portfolio 6
                             </div>
                         </div>
                     </div>
